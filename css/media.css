@@ -1,3 +1,47 @@
+@media (max-width: 1750px) {
+  .main-contant {
+    margin-bottom: 70px; }
 
+  .main-contant .left-side {
+    transform: translateX(12%) translateY(6%); } }
+@media (max-width: 1600px) {
+  .main-contant {
+    margin-bottom: 100px; } }
+@media (max-width: 1400px) {
+  .main-contant .right-side .form-wrapp form .input-item input {
+    width: 200px; }
+
+  .main-contant .right-side .form-wrapp form {
+    padding: 23px 42px 0 42px; } }
+@media (max-width: 1250px) {
+  .main-contant .left-side {
+    transform: translateX(12%) translateY(17%); } }
+@media (max-width: 1199px) {
+  .main-contant .right-side .form-wrapp {
+    padding: 32px; }
+
+  .main-contant .right-side .form-wrapp form {
+    padding: 23px 32px 0 32px; }
+
+  .main-contant .right-side .form-wrapp form .input-item input {
+    width: 180px; } }
+@media (max-width: 991px) {
+  footer .crypto-item-wr {
+    margin-bottom: 20px; }
+
+  .main-contant .right-side .form-wrapp form .inputs-flex-wr {
+    display: block; }
+
+  .main-contant .right-side .form-wrapp form .input-item {
+    width: 100%; }
+
+  .main-contant .right-side .form-wrapp form .input-item input {
+    width: 220px; }
+
+  .main-contant .right-side .form-wrapp form h1 {
+    font-size: 21px; }
+
+  .main-contant .right-side .form-wrapp form .head-form-p {
+    font-size: 14px; } }
 
 /*# sourceMappingURL=media.css.map */

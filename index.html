@@ -16,6 +16,12 @@
     <section class="all-content">
         <div class="head">
             <img src="img/main-logo.png" class="img-responsive" alt="">
+            <div class="lang_block en_flag">
+                <span class="flag_cur" style="background-image: url(img/flag_en.png)">en</span>
+                <div class="lang_select">
+                    <a href="#">CHN</a>
+                </div>
+            </div>
         </div>
         <div class="main-contant">
             <div class="left-side">
@@ -25,7 +31,7 @@
                 <div class="form-wrapp">
                     <form>
                         <h1>Exchange cryptocurrencies</h1>
-                        <p>Inception exchange is a mobile app for<br>exchange of cryptocurrencies.<br>Hundreds of tokens in your app.</p>
+                        <p class="head-form-p">Inception exchange is a mobile app for<br>exchange of cryptocurrencies.<br>Hundreds of tokens in your app.</p>
                         <div class="inputs-flex-wr">
                             <div class="input-item">
                                 <p class="head-inp name-icon">Name</p>
@@ -37,7 +43,7 @@
                             </div>
                             <div class="input-item">
                                 <p class="head-inp phone-icon">Phone</p>
-                                <input type="text">
+                                <input type="text" class="tel-inp">
                             </div>
                             <div class="input-item">
                                <div class="one-checkbox">
@@ -62,13 +68,111 @@
                 </div>
             </div>
         </div>
-        
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="crypto-item-wr">
+                            <div class="top">
+                                <div class="l-s">
+                                    <img src="img/btc.png" class="img-responsive" alt="">
+                                    <p class="f">BTC</p>
+                                    <p class="s">Bitcoin</p>
+                                </div>
+                                <div class="r-s">
+                                    <p class="f">0.241234589</p>
+                                    <p class="s">$1,238.89</p>
+                                </div>
+                            </div>
+                            <div class="bott">
+                                <p class="f">Profit / Loss</p>
+                                <p class="s">-234.45 - 3.5%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="crypto-item-wr">
+                            <div class="top">
+                                <div class="l-s">
+                                    <img src="img/btc.png" class="img-responsive" alt="">
+                                    <p class="f">BTC</p>
+                                    <p class="s">Bitcoin</p>
+                                </div>
+                                <div class="r-s">
+                                    <p class="f">0.241234589</p>
+                                    <p class="s">$1,238.89</p>
+                                </div>
+                            </div>
+                            <div class="bott">
+                                <p class="f">Profit / Loss</p>
+                                <p class="s">-234.45 - 3.5%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="crypto-item-wr">
+                            <div class="top">
+                                <div class="l-s">
+                                    <img src="img/btc.png" class="img-responsive" alt="">
+                                    <p class="f">BTC</p>
+                                    <p class="s">Bitcoin</p>
+                                </div>
+                                <div class="r-s">
+                                    <p class="f">0.241234589</p>
+                                    <p class="s">$1,238.89</p>
+                                </div>
+                            </div>
+                            <div class="bott">
+                                <p class="f">Profit / Loss</p>
+                                <p class="s">-234.45 - 3.5%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="crypto-item-wr">
+                            <div class="top">
+                                <div class="l-s">
+                                    <img src="img/btc.png" class="img-responsive" alt="">
+                                    <p class="f">BTC</p>
+                                    <p class="s">Bitcoin</p>
+                                </div>
+                                <div class="r-s">
+                                    <p class="f">0.241234589</p>
+                                    <p class="s">$1,238.89</p>
+                                </div>
+                            </div>
+                            <div class="bott">
+                                <p class="f">Profit / Loss</p>
+                                <p class="s">-234.45 - 3.5%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="logo-footer">
+                <img src="img/logo-footer.png" class="img-responsive" alt="">
+                <p>Copyright © 2018 INCEPTION. All rights reserved.</p>
+            </div>
+        </footer>
     </section>
    
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    
+    <script src="js/inputmask.js"></script>
+    <script src="js/jquery.inputmask.js"></script>
+    <script>
+        $('.lang_block').click(function(e) {
+            e.stopPropagation();
+            $(this).find('.lang_select').slideToggle();
+        });
+        $('.tel-inp').inputmask({
+        "mask": "+9 (999) 999-99-99"
+            , "placeholder": "_"
+            , showMaskOnHover: false
+            , showMaskOnFocus: true
+        });
+    </script>
   
 </body>
 
