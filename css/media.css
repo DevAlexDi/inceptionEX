@@ -43,5 +43,53 @@
 
   .main-contant .right-side .form-wrapp form .head-form-p {
     font-size: 14px; } }
+@media (max-width: 767px) {
+  .main-contant .left-side {
+    display: none; }
+
+  .main-contant .right-side {
+    width: 100%; }
+
+  .main-contant .right-side .form-wrapp {
+    padding: 15px; }
+
+  .main-contant .right-side .form-wrapp form {
+    padding: 15px; }
+
+  .main-contant .right-side .form-wrapp form button {
+    font-size: 15px; }
+
+  footer .logo-footer p {
+    text-align: center; }
+
+  .lang_block {
+    right: 15px; }
+
+  .head img {
+    max-width: 170px;
+    margin: 0 auto; }
+
+  .main-contant .right-side {
+    padding-top: 0; }
+
+  .main-contant .right-side .form-wrapp form h1 {
+    text-align: center; }
+
+  .main-contant .right-side .form-wrapp form .head-form-p {
+    text-align: center; }
+
+  .main-contant .right-side .form-wrapp form .inputs-flex-wr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
+  .main-contant .right-side .form-wrapp form .input-item {
+    width: auto; }
+
+  .main-contant .right-side .form-wrapp form .head-form-p {
+    font-size: 13px; }
+
+  footer .logo-footer {
+    padding: 0 0 40px 0; } }
 
 /*# sourceMappingURL=media.css.map */
