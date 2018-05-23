@@ -3,7 +3,8 @@
     margin-bottom: 70px; }
 
   .main-contant .left-side {
-    transform: translateX(12%) translateY(6%); } }
+    -webkit-transform: translateX(12%) translateY(6%);
+            transform: translateX(12%) translateY(6%); } }
 @media (max-width: 1600px) {
   .main-contant {
     margin-bottom: 100px; } }
@@ -15,7 +16,8 @@
     padding: 23px 42px 0 42px; } }
 @media (max-width: 1250px) {
   .main-contant .left-side {
-    transform: translateX(12%) translateY(17%); } }
+    -webkit-transform: translateX(12%) translateY(17%);
+            transform: translateX(12%) translateY(17%); } }
 @media (max-width: 1199px) {
   .main-contant .right-side .form-wrapp {
     padding: 32px; }
@@ -79,9 +81,16 @@
     text-align: center; }
 
   .main-contant .right-side .form-wrapp form .inputs-flex-wr {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
 
   .main-contant .right-side .form-wrapp form .input-item {
     width: auto; }

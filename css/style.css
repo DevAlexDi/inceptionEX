@@ -9,11 +9,14 @@ body {
     margin: 0 auto; }
 
 .main-contant {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 40px; }
   .main-contant .left-side {
     width: 45%;
-    transform: translateX(20%); }
+    -webkit-transform: translateX(20%);
+            transform: translateX(20%); }
   .main-contant .right-side {
     width: 55%;
     padding-top: 60px; }
@@ -21,7 +24,6 @@ body {
       background: linear-gradient(45deg, #333334, #222226);
       padding: 32px 62px;
       -webkit-box-shadow: 5px 5px 95px 6px rgba(0, 0, 0, 0.25);
-      -moz-box-shadow: 5px 5px 95px 6px rgba(0, 0, 0, 0.25);
       box-shadow: 5px 5px 95px 6px rgba(0, 0, 0, 0.25);
       margin-bottom: 35px; }
       .main-contant .right-side .form-wrapp form {
@@ -42,9 +44,9 @@ body {
           border: none;
           padding: 11px 0;
           outline: none;
-          transform: translateY(20px);
+          -webkit-transform: translateY(20px);
+                  transform: translateY(20px);
           -webkit-box-shadow: 5px 5px 95px 6px rgba(2, 152, 146, 0.22);
-          -moz-box-shadow: 5px 5px 95px 6px rgba(2, 152, 146, 0.22);
           box-shadow: 5px 5px 95px 6px rgba(2, 152, 146, 0.22); }
         .main-contant .right-side .form-wrapp form h1 {
           font-weight: 600;
@@ -57,13 +59,20 @@ body {
           color: #fff;
           margin-bottom: 40px; }
         .main-contant .right-side .form-wrapp form .inputs-flex-wr {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
-          flex-wrap: wrap;
-          align-items: center;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
           max-width: 815px;
           position: relative;
           z-index: 500;
-          justify-content: space-between; }
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; }
         .main-contant .right-side .form-wrapp form .input-item {
           width: 50%;
           margin-bottom: 25px; }
@@ -91,22 +100,35 @@ body {
             padding-bottom: 5px;
             font-weight: 700;
             border-radius: none;
+            -webkit-transition: 0.3s;
             transition: 0.3s; }
             .main-contant .right-side .form-wrapp form .input-item input:focus {
               color: #fff;
               border-color: #029892; }
     .main-contant .right-side .flex-links-app {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: center;
-      align-items: flex-start; }
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
       .main-contant .right-side .flex-links-app a {
         display: block;
         padding: 0 10px; }
 
 .one-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   position: relative;
   overflow: hidden;
   padding-top: 2px; }
@@ -118,6 +140,8 @@ body {
     left: -5000px;
     top: 0; }
   .one-checkbox .check-style label {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 18px;
     height: 18px;
@@ -154,26 +178,43 @@ footer {
   padding-bottom: 0; }
   footer .logo-footer {
     padding: 40px 0 80px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     footer .logo-footer img {
       margin-bottom: 25px; }
     footer .logo-footer p {
       font-size: 18px;
       color: #8c8989; }
   footer .crypto-item-wr {
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     background: #029892;
     padding: 10px 12px;
-    box-shadow: 5px 5px 35px 6px rgba(2, 152, 146, 0.6);
+    -webkit-box-shadow: 5px 5px 35px 6px rgba(2, 152, 146, 0.6);
+            box-shadow: 5px 5px 35px 6px rgba(2, 152, 146, 0.6);
     border-radius: 3px; }
     footer .crypto-item-wr .top {
       border-bottom: 1px solid #75c0bd;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
       padding-bottom: 8px; }
       footer .crypto-item-wr .top .l-s {
         position: relative;
@@ -191,20 +232,29 @@ footer {
           max-width: 24px;
           position: absolute;
           top: 50%;
-          transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+                  transform: translateY(-50%);
           left: 0; }
       footer .crypto-item-wr .top .r-s .f {
         font-size: 14px;
         color: #fff;
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        text-align: right; }
       footer .crypto-item-wr .top .r-s .s {
         color: #fff;
-        font-size: 10px; }
+        font-size: 10px;
+        text-align: right; }
     footer .crypto-item-wr .bott {
       padding-top: 8px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
-      align-items: center; }
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
       footer .crypto-item-wr .bott .f {
         margin-bottom: 0;
         font-size: 10px;
@@ -218,7 +268,8 @@ footer {
   position: absolute;
   right: 45px;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   text-transform: uppercase;
   cursor: pointer; }
   .lang_block .flag_cur {
@@ -231,7 +282,8 @@ footer {
 .lang_block .lang_select {
   position: absolute;
   right: 50%;
-  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
   border: 1px solid #029892;
   background: white;
   z-index: 20;
